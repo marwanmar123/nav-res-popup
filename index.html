@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+
+<body>
+    <section id="container">
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+        <div class="logo_nav">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="nav_nav">
+            <ul>
+                <li><a href="#">Visite guidée</a></li>
+                <li><a href="#">Études de cas</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="#">Obtenez un devis</a></li>
+            </ul>
+        </div>
+        <div class="button_nav">
+            <a id="open_popup" href="#">Votre devis</a>
+        </div>
+    </section>
+    <section id="header">
+        <div class="content_header">
+            <h1>Nous aidons à bâtir <br>laconfionce dans la <br>conception</h1>
+            <p>Nous sommes passionnés par la création de designs adaptatifs qui amélioreront votre présence numérique
+                et augmenteront le taux de rétention et la confiance des visiteurs de votre sit web. </p>
+            <a href="#">Commencez Maintenant</a>
+        </div>
+        <div class="vid_header">
+            <video autoplay muted loop>
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+            <p>Ne laissez pa vos clients abandonner votre<br>site web avec les 3 premiéres secondes.</p>
+        </div>
+
+    </section>
+    <div class="popup">
+        <form id="myForm" onsubmit="return myFunction();">
+            <button><a id="close" href="#">+</a></button>
+            <div id="myTxt"></div>
+            <fieldset>
+                <legend>personal information</legend>
+                <div>
+                    <!-- <label for="myName">name</label> -->
+                    <input id="myName" type="text" placeholder="Name">
+                </div><br>
+                <div>
+                    <!-- <label for="myEmail">email</label> -->
+                    <input id="myEmail" type="text" placeholder="email">
+                </div><br>
+                <div>
+                    <!-- <label for="myPass">password</label> -->
+                    <input id="myPass" type="password" placeholder="password">
+                </div><br>
+                <div>
+                    <!-- <label for="myPass2">confirme password</label> -->
+                    <input id="myPass2" type="password" placeholder=" confirme password">
+                </div><br>
+            </fieldset>
+            <fieldset>
+                <legend>Your Message</legend>
+                <div>
+                    <textarea id="textErea" cols="30" rows="10"></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="envoyer">
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
